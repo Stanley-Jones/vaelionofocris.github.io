@@ -13,6 +13,8 @@ body{
   background:var(--bg);
   color:var(--fg);
   line-height:1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
@@ -21,13 +23,30 @@ a:hover{text-decoration:underline}
 .brand{color:var(--accent);letter-spacing:.12em;font-weight:700}
 .menu a{margin-left:1rem;color:var(--muted)}
 .hero{
+  position:relative;
+  overflow:hidden;
   background: radial-gradient(80% 120% at 20% 20%, rgba(196,154,108,.22), transparent 60%),
               radial-gradient(60% 100% at 80% 30%, rgba(196,154,108,.12), transparent 55%);
   border:1px solid var(--line);
   padding:2rem; margin-bottom:2rem;
   box-shadow: 0 12px 36px rgba(0,0,0,.35);
 }
-.hero h1{margin:.25rem 0 0 0; font-size:2.25rem; color:var(--accent); letter-spacing:.04em}
+.hero h1{margin:.25rem 0 0 0; font-size:2.25rem; color:var(--accent); letter-spacing:.04em; position:relative}
+/* subtle shimmer */
+.hero h1::after{
+  content:"";
+  position:absolute;
+  top:0; left:-120%;
+  width:60%; height:100%;
+  background: linear-gradient(75deg, transparent, rgba(196,154,108,.22), transparent);
+  transform:skewX(-12deg);
+  animation:shine 6.5s ease-in-out infinite;
+}
+@keyframes shine{
+  0%{ left:-120%;}
+  25%{ left:120%;}
+  100%{ left:120%;}
+}
 .subtitle{color:var(--muted); margin-top:.25rem}
 .cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}
 .button{
@@ -46,3 +65,4 @@ a:hover{text-decoration:underline}
 .footer{margin:3rem 0 1rem 0; color:var(--muted); font-size:.95rem; text-align:center}
 .rule{border:none;height:1px;background:var(--line);margin:2rem 0}
 .note{color:var(--muted); font-style:italic}
+.small{font-size:.9rem;color:var(--muted)}
