@@ -1,0 +1,79 @@
+
+:root{
+  --bg:#0e0e0e;
+  --fg:#e6e1dc;
+  --muted:#bfb6a8;
+  --accent:#c49a6c;
+  --line:#2a2a2a;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: "Crimson Text", Georgia, serif;
+  background:var(--bg);
+  color:var(--fg);
+  line-height:1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrapper{max-width:980px;margin:0 auto;padding:2.5rem 1.25rem}
+.nav{display:flex;gap:1rem;align-items:center;justify-content:space-between;margin-bottom:1.5rem}
+.brand{color:var(--accent);letter-spacing:.12em;font-weight:700}
+.menu a{margin-left:1rem;color:var(--muted)}
+.hero{
+  position:relative;
+  overflow:hidden;
+  background: radial-gradient(80% 120% at 20% 20%, rgba(196,154,108,.22), transparent 60%),
+              radial-gradient(60% 100% at 80% 30%, rgba(196,154,108,.12), transparent 55%);
+  border:1px solid var(--line);
+  padding:2rem; margin-bottom:2rem;
+  box-shadow: 0 12px 36px rgba(0,0,0,.35);
+}
+.hero h1{margin:.25rem 0 0 0; font-size:2.25rem; color:var(--accent); letter-spacing:.04em; position:relative}
+/* subtle shimmer */
+.hero h1::after{
+  content:"";
+  position:absolute;
+  top:0; left:-120%;
+  width:60%; height:100%;
+  background: linear-gradient(75deg, transparent, rgba(196,154,108,.22), transparent);
+  transform:skewX(-12deg);
+  animation:shine 6.5s ease-in-out infinite;
+}
+@keyframes shine{
+  0%{ left:-120%;}
+  25%{ left:120%;}
+  100%{ left:120%;}
+}
+.subtitle{color:var(--muted); margin-top:.25rem}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}
+.button{
+  display:inline-block; padding:.6rem 1rem; border:1px solid var(--line);
+  color:var(--fg); background:#151515; border-radius:4px; transition:.2s;
+}
+.button:hover{transform:translateY(-1px); box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.grid{display:grid; gap:1rem; grid-template-columns:1fr; margin-top:1.5rem}
+.card{background:#121212;border:1px solid var(--line);padding:1rem}
+.card h3{margin:.2rem 0;color:var(--accent)}
+.card p{color:var(--muted)}
+.cover{width:100%;height:auto;display:block;filter:saturate(.95) contrast(1.05)}
+@media(min-width:860px){
+  .grid{grid-template-columns:1fr 1fr}
+}
+.footer{margin:3rem 0 1rem 0; color:var(--muted); font-size:.95rem; text-align:center}
+.rule{border:none;height:1px;background:var(--line);margin:2rem 0}
+.note{color:var(--muted); font-style:italic}
+.small{font-size:.9rem;color:var(--muted)}
+
+
+html { scroll-behavior: smooth; }
+
+/* Giscus comments styling */
+.comments{margin:1.5rem 0 0}
+.comments .comments-inner{padding:1rem 1.25rem;border:1px solid #e8e8e8;border-radius:12px;background:rgba(0,0,0,0.03)}
+@media (prefers-color-scheme: dark){
+  .comments .comments-inner{border-color:#2a2a2a;background:rgba(255,255,255,0.04)}
+}
+.comments h3{margin-top:0;margin-bottom:.75rem;font-size:1.125rem}

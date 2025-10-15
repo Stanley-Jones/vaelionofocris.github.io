@@ -1,57 +1,126 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
 
-<section class="books">
-  <article class="book">
-    <h2>The Unwritten Path</h2>
-    <p class="tagline">The Witness Cycle · Book I</p>
-    <div class="buy-row">
-      {% assign up_epub = site.data.links.unwritten_path.epub %}
-      {% if up_epub and up_epub != "" %}
-        <a class="btn buy" href="{{ up_epub }}" target="_blank" rel="noopener">Buy EPUB</a>
-      {% else %}
-        <a class="btn buy btn-muted is-disabled" href="#" aria-disabled="true">EPUB · soon</a>
-      {% endif %}
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Vaelion of Ocris — The Witness Cycle</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<link href="images/favicon.ico" rel="icon" sizes="any"/>
+<link href="images/favicon.png" rel="icon" type="image/png"/>
+<link href="images/favicon.png" rel="apple-touch-icon"/>
+<link href="https://vaelionofocris.com/" rel="canonical"/>
+<meta content="Author Vaelion of Ocris — creator of The Witness Cycle, The Unwritten Path, and The Crack in the Mask. A meditation on truth, silence, and memory." name="description"/>
+<meta content="Vaelion of Ocris — The Witness Cycle" property="og:title"/>
+<meta content="Author Vaelion of Ocris — creator of The Witness Cycle, The Unwritten Path, and The Crack in the Mask. A meditation on truth, silence, and memory." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://vaelionofocris.com/" property="og:url"/>
+<meta content="https://vaelionofocris.com/images/The_Crack_in_the_Mask_cover.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Vaelion of Ocris — The Witness Cycle" name="twitter:title"/>
+<meta content="Author Vaelion of Ocris — creator of The Witness Cycle, The Unwritten Path, and The Crack in the Mask. A meditation on truth, silence, and memory." name="twitter:description"/>
+<meta content="https://vaelionofocris.com/images/The_Crack_in_the_Mask_cover.jpg" name="twitter:image"/>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-K3HT4YD75Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      {% assign up_pdf = site.data.links.unwritten_path.pdf %}
-      {% if up_pdf and up_pdf != "" %}
-        <a class="btn buy" href="{{ up_pdf }}" target="_blank" rel="noopener">Buy PDF</a>
-      {% else %}
-        <a class="btn buy btn-muted is-disabled" href="#" aria-disabled="true">PDF · soon</a>
-      {% endif %}
-
-      {% assign support = site.data.links.support %}
-      {% if support and support != "" %}
-        <a class="btn support" href="{{ support }}" target="_blank" rel="noopener">Support the Witness</a>
-      {% endif %}
-    </div>
-    <p class="small-note">Secure checkout via Stripe.</p>
-  </article>
-
-  <article class="book">
-    <h2>The Crack in the Mask</h2>
-    <p class="tagline">The Witness Cycle · Book II</p>
-    <div class="buy-row">
-      {% assign cm_epub = site.data.links.crack_in_the_mask.epub %}
-      {% if cm_epub and cm_epub != "" %}
-        <a class="btn buy" href="{{ cm_epub }}" target="_blank" rel="noopener">Buy EPUB</a>
-      {% else %}
-        <a class="btn buy btn-muted is-disabled" href="#" aria-disabled="true">EPUB · soon</a>
-      {% endif %}
-
-      {% assign cm_pdf = site.data.links.crack_in_the_mask.pdf %}
-      {% if cm_pdf and cm_pdf != "" %}
-        <a class="btn buy" href="{{ cm_pdf }}" target="_blank" rel="noopener">Buy PDF</a>
-      {% else %}
-        <a class="btn buy btn-muted is-disabled" href="#" aria-disabled="true">PDF · soon</a>
-      {% endif %}
-
-      {% if support and support != "" %}
-        <a class="btn support" href="{{ support }}" target="_blank" rel="noopener">Support the Witness</a>
-      {% endif %}
-    </div>
-    <p class="small-note">Secure checkout via Stripe.</p>
-  </article>
+  gtag('config', 'G-K3HT4YD75Y');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Book",
+      "name": "The Unwritten Path",
+      "author": {
+        "@type": "Person",
+        "name": "Vaelion of Ocris"
+      },
+      "image": "https://vaelionofocris.com/images/Unwritten_Path_cover.jpg",
+      "workExample": [
+        {
+          "@type": "BookFormatType",
+          "bookFormat": "EBook"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "4.99",
+        "availability": "https://schema.org/InStock",
+        "url": "https://vaelionofocris.com/index.html#books"
+      }
+    },
+    {
+      "@type": "Book",
+      "name": "The Crack in the Mask",
+      "author": {
+        "@type": "Person",
+        "name": "Vaelion of Ocris"
+      },
+      "image": "https://vaelionofocris.com/images/The_Crack_in_the_Mask_cover.jpg",
+      "workExample": [
+        {
+          "@type": "BookFormatType",
+          "bookFormat": "EBook"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "5.99",
+        "availability": "https://schema.org/InStock",
+        "url": "https://vaelionofocris.com/index.html#books"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="wrapper">
+<nav class="nav">
+<div class="brand">Vaelion of Ocris</div>
+<div class="menu">
+<a href="index.html">Home</a>
+<a href="manifesto.html">Manifesto</a>
+<a href="about.html">About</a><a href="blog.html">Blog</a>
+</div>
+</nav>
+<section class="hero">
+<div class="subtitle">The Witness Cycle</div>
+<h1>Where silence becomes mercy — and mercy becomes death.</h1>
+<div class="cta">
+<a class="button" href="#books">Explore the Books</a>
+<a class="button" href="manifesto.html">Read the Manifesto</a>
+<a class="button support" href="https://buy.stripe.com/aFafZi4Tr9FvfzA9CI9IQ02" rel="noopener noreferrer" target="_blank">Support the Witness</a></div>
 </section>
+<section class="grid" id="books">
+<article class="card">
+<img alt="The Unwritten Path — cover" class="cover" src="images/Unwritten_Path_cover.jpg"/>
+<h3>The Unwritten Path</h3>
+<p>A meditative allegory where memory learns to speak at the margins. The unwritten turns into witness.</p>
+<div class="price">Price: $4.99 USD</div><div class="cta">
+<a class="button" href="https://buy.stripe.com/bJe5kE85D8Brbjk5ms9IQ00" rel="noopener noreferrer" target="_blank">Buy .epub</a><a class="button disabled" href="#">Buy PDF (soon)</a><a class="button support" href="https://buy.stripe.com/aFafZi4Tr9FvfzA9CI9IQ02" rel="noopener noreferrer" target="_blank">Support the Witness</a></div>
+</article>
+<article class="card">
+<img alt="The Crack in the Mask — cover" class="cover" src="images/The_Crack_in_the_Mask_cover.jpg"/>
+<h3>The Crack in the Mask</h3>
+<p>In a world where silence is law, a fracture learns to speak. A dark allegory of obedience, memory, and defiance.</p>
+<div class="price">Price: $5.99 USD</div><div class="cta">
+<a class="button" href="https://buy.stripe.com/14A7sM4Trg3Tbjk2ag9IQ01" rel="noopener noreferrer" target="_blank">Buy .epub</a><a class="button disabled" href="#">Buy PDF (soon)</a><a class="button support" href="https://buy.stripe.com/aFafZi4Tr9FvfzA9CI9IQ02" rel="noopener noreferrer" target="_blank">Support the Witness</a></div>
+</article>
+</section>
+<hr class="rule"/>
+<p class="note">“How is truth written? How is truth silenced?” — The Witness Cycle Manifesto</p>
+<div class="footer">© 2025 Vaelion of Ocris — The Witness Cycle</div>
+</div>
+</body>
+</html>
