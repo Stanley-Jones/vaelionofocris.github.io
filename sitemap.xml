@@ -1,33 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
     <loc>https://vaelionofocris.com/</loc>
     <lastmod>2025-10-15</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <url>
+    <loc>https://vaelionofocris.com/index.html</loc>
+    <lastmod>2025-10-15</lastmod>
+    <priority>1.0</priority>
+  </url>
+
   <url>
     <loc>https://vaelionofocris.com/about.html</loc>
     <lastmod>2025-10-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://vaelionofocris.com/manifesto.html</loc>
     <lastmod>2025-10-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://vaelionofocris.com/blog.html</loc>
     <lastmod>2025-10-15</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Blog posts -->
   <url>
-    <loc>https://vaelionofocris.com/download.html</loc>
+    <loc>https://vaelionofocris.com/posts/on-witnessing-vs-explaining.html</loc>
     <lastmod>2025-10-15</lastmod>
-    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vaelionofocris.com/posts/a-quiet-introduction-to-the-witness-cycle.html</loc>
+    <lastmod>2025-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vaelionofocris.com/posts/on-the-weight-of-remembering.html</loc>
+    <lastmod>2025-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vaelionofocris.com/posts/on-finishing-a-silence.html</loc>
+    <lastmod>2025-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Utility pages -->
+  <url>
+    <loc>https://vaelionofocris.com/success.html</loc>
+    <lastmod>2025-10-15</lastmod>
     <priority>0.4</priority>
   </url>
+
+  <url>
+    <loc>https://vaelionofocris.com/cancel.html</loc>
+    <lastmod>2025-10-15</lastmod>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
