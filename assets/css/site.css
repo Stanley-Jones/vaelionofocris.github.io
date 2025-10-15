@@ -1,0 +1,27 @@
+:root{--t:#d2b48c;--b:#0b0b0b;--fg:#f2ede6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--b);color:var(--fg);font:16px/1.55 system-ui,Segoe UI,Roboto,Arial}
+a{color:var(--t);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:900px;margin:0 auto;padding:1.25rem}
+
+.site-header{display:flex;gap:1rem;align-items:center;justify-content:space-between;border-bottom:1px solid #2b2b2b}
+.logo{font-weight:600}
+.topnav{display:flex;gap:1rem;align-items:center}
+.btn{padding:.6rem .9rem;border-radius:.6rem;border:1px solid #6b6b6b;display:inline-block}
+.btn.support{border-color:#6aa06a;background:rgba(106,160,106,.09)}
+.btn.support:hover,.btn.buy:hover{transform:translateY(-1px)}
+.site-footer{border-top:1px solid #2b2b2b;padding:1rem;text-align:center;display:grid;gap:.5rem}
+
+.books{display:grid;gap:2rem}
+.book .tagline{opacity:.8;margin-top:-.25rem}
+.buy-row{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.6rem}
+.btn.buy{border-color:#a77}
+.btn-muted{opacity:.55;cursor:not-allowed}
+.is-disabled{pointer-events:none}
+.small-note{opacity:.7;font-size:.9rem;margin-top:.25rem}
+
+.blog-list{display:grid;gap:1.25rem}
+.post-card{border:1px solid #2b2b2b;padding:1rem;border-radius:.6rem}
+.post .meta{opacity:.8}
+.comments{margin-top:2rem;padding-top:1rem;border-top:1px solid #2b2b2b}

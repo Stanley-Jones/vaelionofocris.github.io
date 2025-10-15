@@ -1,93 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Vaelion of Ocris — The Witness Cycle</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="images/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="images/favicon.png">
-<link rel="apple-touch-icon" href="images/favicon.png">
-<link rel="canonical" href="https://vaelionofocris.com/">
-<meta name="description" content="Author Vaelion of Ocris — creator of The Witness Cycle, The Unwritten Path, and The Crack in the Mask. A meditation on truth, silence, and memory.">
-<meta property="og:title" content="Vaelion of Ocris — The Witness Cycle">
-<meta property="og:description" content="Author Vaelion of Ocris — creator of The Witness Cycle, The Unwritten Path, and The Crack in the Mask. A meditation on truth, silence, and memory.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://vaelionofocris.com/">
-<meta property="og:image" content="https://vaelionofocris.com/images/The_Crack_in_the_Mask_cover.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Vaelion of Ocris — The Witness Cycle">
-<meta name="twitter:description" content="Author Vaelion of Ocris — creator of The Witness Cycle, The Unwritten Path, and The Crack in the Mask. A meditation on truth, silence, and memory.">
-<meta name="twitter:image" content="https://vaelionofocris.com/images/The_Crack_in_the_Mask_cover.jpg">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K3HT4YD75Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+---
+layout: default
+title: Home
+---
 
-  gtag('config', 'G-K3HT4YD75Y');
-</script>
-</head>
-<body>
-  <div class="wrapper">
-    <nav class="nav">
-      <div class="brand">Vaelion of Ocris</div>
-      <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="manifesto.html">Manifesto</a>
-        <a href="about.html">About</a>
-      </div>
-    </nav>
+<section class="books">
+  <article class="book">
+    <h2>The Unwritten Path</h2>
+    <p class="tagline">The Witness Cycle · Book I</p>
+    <div class="buy-row">
+      {% assign up_epub = site.data.links.unwritten_path.epub %}
+      {% if up_epub and up_epub != "" %}
+        <a class="btn buy" href="{{ up_epub }}" target="_blank" rel="noopener">Buy EPUB</a>
+      {% else %}
+        <a class="btn buy btn-muted is-disabled" href="#" aria-disabled="true">EPUB · soon</a>
+      {% endif %}
 
-    <section class="hero">
-      <div class="subtitle">The Witness Cycle</div>
-      <h1>Where silence becomes mercy — and mercy becomes death.</h1>
-      <div class="cta">
-        <a class="button" href="https://a.co/d/coRB9Rx" title="Buy The Crack in the Mask on Amazon" target="_blank" rel="noopener">Buy The Crack in the Mask</a>
-        <a class="button" href="https://a.co/d/iNMTQEa" title="Buy The Unwritten Path on Amazon" target="_blank" rel="noopener">Buy The Unwritten Path</a>
-        <a class="button" href="manifesto.html">Read the Manifesto</a>
-      </div>
-    </section>
+      {% assign up_pdf = site.data.links.unwritten_path.pdf %}
+      {% if up_pdf and up_pdf != "" %}
+        <a class="btn buy" href="{{ up_pdf }}" target="_blank" rel="noopener">Buy PDF</a>
+      {% else %}
+        <a class="btn buy btn-muted is-disabled" href="#" aria-disabled="true">PDF · soon</a>
+      {% endif %}
 
-    <section class="grid">
-      <article class="card">
-        <img class="cover" src="images/Unwritten_Path_cover.jpg" alt="The Unwritten Path — cover">
-        <h3>The Unwritten Path</h3>
-        <p>A meditative allegory where memory learns to speak at the margins. The unwritten turns into witness.</p>
-        <div class="cta">
-          <a class="button" href="https://a.co/d/iNMTQEa" title="Amazon link for The Unwritten Path" target="_blank" rel="noopener">Amazon</a>
-          <a class="button"
-   href="https://www.goodreads.com/book/show/242078070-unwritten-path"
-   title="Goodreads: The Unwritten Path"
-   target="_blank" rel="noopener noreferrer">Goodreads</a>
+      {% assign support = site.data.links.support %}
+      {% if support and support != "" %}
+        <a class="btn support" href="{{ support }}" target="_blank" rel="noopener">Support the Witness</a>
+      {% endif %}
+    </div>
+    <p class="small-note">Secure checkout via Stripe.</p>
+  </article>
 
-        </div>
-      </article>
+  <article class="book">
+    <h2>The Crack in the Mask</h2>
+    <p class="tagline">The Witness Cycle · Book II</p>
+    <div class="buy-row">
+      {% assign cm_epub = site.data.links.crack_in_the_mask.epub %}
+      {% if cm_epub and cm_epub != "" %}
+        <a class="btn buy" href="{{ cm_epub }}" target="_blank" rel="noopener">Buy EPUB</a>
+      {% else %}
+        <a class="btn buy btn-muted is-disabled" href="#" aria-disabled="true">EPUB · soon</a>
+      {% endif %}
 
-      <article class="card">
-        <img class="cover" src="images/The_Crack_in_the_Mask_cover.jpg" alt="The Crack in the Mask — cover">
-        <h3>The Crack in the Mask</h3>
-        <p>In a world where silence is law, a fracture learns to speak. A dark allegory of obedience, memory, and defiance.</p>
-        <div class="cta">
-          <a class="button" href="https://a.co/d/coRB9Rx" title="Amazon link for The Crack in the Mask" target="_blank" rel="noopener">Amazon</a>
-          <a class="button"
-   href="https://www.goodreads.com/book/show/242372307-the-crack-in-the-mask"
-   title="Goodreads: The Crack in the Mask"
-   target="_blank" rel="noopener noreferrer">Goodreads</a>
+      {% assign cm_pdf = site.data.links.crack_in_the_mask.pdf %}
+      {% if cm_pdf and cm_pdf != "" %}
+        <a class="btn buy" href="{{ cm_pdf }}" target="_blank" rel="noopener">Buy PDF</a>
+      {% else %}
+        <a class="btn buy btn-muted is-disabled" href="#" aria-disabled="true">PDF · soon</a>
+      {% endif %}
 
-        </div>
-      </article>
-    </section>
-
-    <hr class="rule">
-
-    <p class="note">“How is truth written? How is truth silenced?” — The Witness Cycle Manifesto</p>
-
-    <div class="footer">© 2025 Vaelion of Ocris — The Witness Cycle</div>
-  </div>
-</body>
-</html>
+      {% if support and support != "" %}
+        <a class="btn support" href="{{ support }}" target="_blank" rel="noopener">Support the Witness</a>
+      {% endif %}
+    </div>
+    <p class="small-note">Secure checkout via Stripe.</p>
+  </article>
+</section>
