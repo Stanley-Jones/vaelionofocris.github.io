@@ -30,6 +30,19 @@
   gtag('js', new Date());
   gtag('config', 'G-K3HT4YD75Y');
 </script>
+<!-- Small CSS override to center/align buttons consistently across all cards -->
+<style>
+  .card .cta {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    flex-wrap: wrap;
+  }
+  .card .cta a {
+    min-width: 120px;
+    text-align: center;
+  }
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
