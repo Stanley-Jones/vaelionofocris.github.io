@@ -22,19 +22,33 @@
 <meta content="Vaelion of Ocris — The Witness Cycle" name="twitter:title"/>
 <meta content="Author Vaelion of Ocris — creator of The Witness Cycle, The Unwritten Path, The Crack in the Mask, and The Hunger to Speak. A meditation on truth, silence, and memory." name="twitter:description"/>
 <meta content="https://vaelionofocris.com/images/The_Witness_Cycle.jpg" name="twitter:image"/>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K3HT4YD75Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-K3HT4YD75Y');
-</script>
-<!-- Small CSS override to center/align buttons consistently across all cards -->
+
+<!-- Responsive equal-height cards and button alignment -->
 <style>
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+  }
+  .card img.cover {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
   .card .cta {
+    margin-top: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 0.5em;
     flex-wrap: wrap;
   }
@@ -43,6 +57,7 @@
     text-align: center;
   }
 </style>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -141,9 +156,9 @@
     <h3>The Unwritten Path</h3>
     <p>A meditative allegory where memory learns to speak at the margins. The unwritten turns into witness.</p>
     <div class="cta">
-      <a class="button" href="https://a.co/d/iNMTQEa" title="Amazon link for The Unwritten Path" target="_blank" rel="noopener">Amazon</a>
-      <a class="button" href="https://www.goodreads.com/book/show/242078070-unwritten-path" title="Goodreads link for The Unwritten Path" target="_blank" rel="noopener">Goodreads</a>
-      <a class="button support" href="https://buy.stripe.com/aFafZi4Tr9FvfzA9CI9IQ02" rel="noopener noreferrer" target="_blank">Support the Witness</a>
+      <a class="button" href="https://a.co/d/iNMTQEa" target="_blank" rel="noopener">Amazon</a>
+      <a class="button" href="https://www.goodreads.com/book/show/242078070-unwritten-path" target="_blank" rel="noopener">Goodreads</a>
+      <a class="button support" href="https://buy.stripe.com/aFafZi4Tr9FvfzA9CI9IQ02" target="_blank" rel="noopener">Support the Witness</a>
     </div>
   </article>
 
@@ -152,32 +167,30 @@
     <h3>The Crack in the Mask</h3>
     <p>In a world where silence is law, a fracture learns to speak. A dark allegory of obedience, memory, and defiance.</p>
     <div class="cta">
-      <a class="button" href="https://a.co/d/coRB9Rx" title="Amazon link for The Crack in the Mask" target="_blank" rel="noopener">Amazon</a>
-      <a class="button" href="https://www.goodreads.com/book/show/242372307-the-crack-in-the-mask" title="Goodreads link for The Crack in the Mask" target="_blank" rel="noopener">Goodreads</a>
-      <a class="button support" href="https://buy.stripe.com/aFafZi4Tr9FvfzA9CI9IQ02" rel="noopener noreferrer" target="_blank">Support the Witness</a>
+      <a class="button" href="https://a.co/d/coRB9Rx" target="_blank" rel="noopener">Amazon</a>
+      <a class="button" href="https://www.goodreads.com/book/show/242372307-the-crack-in-the-mask" target="_blank" rel="noopener">Goodreads</a>
+      <a class="button support" href="https://buy.stripe.com/aFafZi4Tr9FvfzA9CI9IQ02" target="_blank" rel="noopener">Support the Witness</a>
     </div>
   </article>
 
-  <!-- NEW BOOK 3 -->
   <article class="card">
     <img class="cover" src="images/THE_HUNGER_TO_SPEAK_pilot.jpg" alt="Book III of The Witness Cycle (Pilot Edition) Every silence remembers the shape of a voice.">
     <h3>The Hunger to Speak</h3>
     <p>The Hunger to Speak is a meditation on language, memory, and the moment when truth begins to breathe again.</p>
     <div class="cta">
-      <a class="button" href="https://a.co/d/7YBj7sc" title="Amazon link for The Hunger to Speak" target="_blank" rel="noopener">Amazon</a>
-      <a class="button" href="https://www.goodreads.com/book/show/243191184-the-hunger-to-speak-pilot-short-edition" title="Goodreads link for The Hunger to Speak" target="_blank" rel="noopener">Goodreads</a>
-      <a class="button support" href="https://buy.stripe.com/aFafZi4Tr9FvfzA9CI9IQ02" rel="noopener noreferrer" target="_blank">Support the Witness</a>
+      <a class="button" href="https://a.co/d/7YBj7sc" target="_blank" rel="noopener">Amazon</a>
+      <a class="button" href="https://www.goodreads.com/book/show/243191184-the-hunger-to-speak-pilot-short-edition" target="_blank" rel="noopener">Goodreads</a>
+      <a class="button support" href="https://buy.stripe.com/aFafZi4Tr9FvfzA9CI9IQ02" target="_blank" rel="noopener">Support the Witness</a>
     </div>
   </article>
 
-  <!-- NEW BOOK 4 -->
   <article class="card">
     <img class="cover" src="images/The_Witness_Cycle.jpg" alt="The Witness Cycle Books I — III">
     <h3>The Witness Cycle Books I — III</h3>
     <p>Together they trace a single breath — from inscription to fracture, from fracture to understanding. Not stories, but echoes. And every echo is a witness.</p>
     <div class="cta">
-      <a class="button" href="https://www.amazon.com/dp/B0FVMGQVX2?binding=kindle_edition&ref_=ast_author_bsi" title="Amazon boxset link" target="_blank" rel="noopener">Amazon</a>
-      <a class="button support" href="https://buy.stripe.com/aFafZi4Tr9FvfzA9CI9IQ02" rel="noopener noreferrer" target="_blank">Support the Witness</a>
+      <a class="button" href="https://www.amazon.com/dp/B0FVMGQVX2?binding=kindle_edition&ref_=ast_author_bsi" target="_blank" rel="noopener">Amazon</a>
+      <a class="button support" href="https://buy.stripe.com/aFafZi4Tr9FvfzA9CI9IQ02" target="_blank" rel="noopener">Support the Witness</a>
     </div>
   </article>
 </section>
