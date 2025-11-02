@@ -6,24 +6,24 @@
 <title>Vaelion of Ocris — The Witness Cycle</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
 <link href="style.css" rel="stylesheet"/>
 <link href="images/favicon.ico" rel="icon" sizes="any"/>
 <link href="images/favicon.png" rel="icon" type="image/png"/>
 <link href="images/favicon.png" rel="apple-touch-icon"/>
 <link href="https://vaelionofocris.com/" rel="canonical"/>
-<meta content="Author Vaelion of Ocris — creator of The Witness Cycle, The Unwritten Path, and The Crack in the Mask. A meditation on truth, silence, and memory." name="description"/>
+<meta content="Author Vaelion of Ocris — creator of The Witness Cycle, The Unwritten Path, The Crack in the Mask, and The Hunger to Speak. A meditation on truth, silence, and memory." name="description"/>
 <meta content="Vaelion of Ocris — The Witness Cycle" property="og:title"/>
-<meta content="Author Vaelion of Ocris — creator of The Witness Cycle, The Unwritten Path, and The Crack in the Mask. A meditation on truth, silence, and memory." property="og:description"/>
+<meta content="Author Vaelion of Ocris — creator of The Witness Cycle, The Unwritten Path, The Crack in the Mask, and The Hunger to Speak. A meditation on truth, silence, and memory." property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="https://vaelionofocris.com/" property="og:url"/>
-<meta content="https://vaelionofocris.com/images/The_Crack_in_the_Mask_cover.jpg" property="og:image"/>
+<meta content="https://vaelionofocris.com/images/The_Witness_Cycle.jpg" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Vaelion of Ocris — The Witness Cycle" name="twitter:title"/>
-<meta content="Author Vaelion of Ocris — creator of The Witness Cycle, The Unwritten Path, and The Crack in the Mask. A meditation on truth, silence, and memory." name="twitter:description"/>
-<meta content="https://vaelionofocris.com/images/The_Crack_in_the_Mask_cover.jpg" name="twitter:image"/>
+<meta content="Author Vaelion of Ocris — creator of The Witness Cycle, The Unwritten Path, The Crack in the Mask, and The Hunger to Speak. A meditation on truth, silence, and memory." name="twitter:description"/>
+<meta content="https://vaelionofocris.com/images/The_Witness_Cycle.jpg" name="twitter:image"/>
 <!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-K3HT4YD75Y"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K3HT4YD75Y"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -37,45 +37,63 @@
     {
       "@type": "Book",
       "name": "The Unwritten Path",
-      "author": {
-        "@type": "Person",
-        "name": "Vaelion of Ocris"
-      },
+      "author": { "@type": "Person", "name": "Vaelion of Ocris" },
       "image": "https://vaelionofocris.com/images/Unwritten_Path_cover.jpg",
-      "workExample": [
-        {
-          "@type": "BookFormatType",
-          "bookFormat": "EBook"
-        }
-      ],
       "offers": {
         "@type": "Offer",
         "priceCurrency": "USD",
         "price": "4.99",
         "availability": "https://schema.org/InStock",
         "url": "https://vaelionofocris.com/index.html#books"
-      }
+      },
+      "@id": "https://vaelionofocris.com/book/unwritten-path"
     },
     {
       "@type": "Book",
       "name": "The Crack in the Mask",
-      "author": {
-        "@type": "Person",
-        "name": "Vaelion of Ocris"
-      },
+      "author": { "@type": "Person", "name": "Vaelion of Ocris" },
       "image": "https://vaelionofocris.com/images/The_Crack_in_the_Mask_cover.jpg",
-      "workExample": [
-        {
-          "@type": "BookFormatType",
-          "bookFormat": "EBook"
-        }
-      ],
       "offers": {
         "@type": "Offer",
         "priceCurrency": "USD",
         "price": "5.99",
         "availability": "https://schema.org/InStock",
         "url": "https://vaelionofocris.com/index.html#books"
+      },
+      "@id": "https://vaelionofocris.com/book/crack-in-the-mask"
+    },
+    {
+      "@type": "Book",
+      "name": "The Hunger to Speak (Pilot Edition)",
+      "alternateName": "The Hunger to Speak",
+      "author": { "@type": "Person", "name": "Vaelion of Ocris" },
+      "image": "https://vaelionofocris.com/images/THE_HUNGER_TO_SPEAK_pilot.jpg",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://a.co/d/7YBj7sc"
+      },
+      "sameAs": [
+        "https://www.goodreads.com/book/show/243191184-the-hunger-to-speak-pilot-short-edition"
+      ],
+      "@id": "https://vaelionofocris.com/book/the-hunger-to-speak"
+    },
+    {
+      "@type": "CreativeWorkSeries",
+      "name": "The Witness Cycle",
+      "image": "https://vaelionofocris.com/images/The_Witness_Cycle.jpg",
+      "url": "https://vaelionofocris.com/",
+      "author": { "@type": "Person", "name": "Vaelion of Ocris" },
+      "hasPart": [
+        { "@id": "https://vaelionofocris.com/book/unwritten-path" },
+        { "@id": "https://vaelionofocris.com/book/crack-in-the-mask" },
+        { "@id": "https://vaelionofocris.com/book/the-hunger-to-speak" }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.amazon.com/dp/B0FVMGQVX2?binding=kindle_edition&ref_=ast_author_bsi",
+        "availability": "https://schema.org/InStock"
       }
     }
   ]
@@ -123,6 +141,29 @@
     <div class="cta">
       <a class="button" href="https://a.co/d/coRB9Rx" title="Amazon link for The Crack in the Mask" target="_blank" rel="noopener">Amazon</a>
       <a class="button" href="https://www.goodreads.com/book/show/242372307-the-crack-in-the-mask" title="Goodreads link for The Crack in the Mask" target="_blank" rel="noopener">Goodreads</a>
+      <a class="button support" href="https://buy.stripe.com/aFafZi4Tr9FvfzA9CI9IQ02" rel="noopener noreferrer" target="_blank">Support the Witness</a>
+    </div>
+  </article>
+
+  <!-- NEW BOOK 3 -->
+  <article class="card">
+    <img class="cover" src="images/THE_HUNGER_TO_SPEAK_pilot.jpg" alt="Book III of The Witness Cycle (Pilot Edition) Every silence remembers the shape of a voice.">
+    <h3>The Hunger to Speak</h3>
+    <p>The Hunger to Speak is a meditation on language, memory, and the moment when truth begins to breathe again.</p>
+    <div class="cta">
+      <a class="button" href="https://a.co/d/7YBj7sc" title="Amazon link for The Hunger to Speak" target="_blank" rel="noopener">Amazon</a>
+      <a class="button" href="https://www.goodreads.com/book/show/243191184-the-hunger-to-speak-pilot-short-edition" title="Goodreads link for The Hunger to Speak" target="_blank" rel="noopener">Goodreads</a>
+      <a class="button support" href="https://buy.stripe.com/aFafZi4Tr9FvfzA9CI9IQ02" rel="noopener noreferrer" target="_blank">Support the Witness</a>
+    </div>
+  </article>
+
+  <!-- NEW BOOK 4 -->
+  <article class="card">
+    <img class="cover" src="images/The_Witness_Cycle.jpg" alt="The Witness Cycle Books I — III">
+    <h3>The Witness Cycle Books I — III</h3>
+    <p>Together they trace a single breath — from inscription to fracture, from fracture to understanding. Not stories, but echoes. And every echo is a witness.</p>
+    <div class="cta">
+      <a class="button" href="https://www.amazon.com/dp/B0FVMGQVX2?binding=kindle_edition&ref_=ast_author_bsi" title="Amazon boxset link" target="_blank" rel="noopener">Amazon</a>
       <a class="button support" href="https://buy.stripe.com/aFafZi4Tr9FvfzA9CI9IQ02" rel="noopener noreferrer" target="_blank">Support the Witness</a>
     </div>
   </article>
