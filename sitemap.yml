@@ -1,0 +1,28 @@
+name: Generate sitemap
+on:
+  push:
+    branches: [ "main", "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate sitemap.xml
+        run: |
+          python generate_sitemap.py --site-root "https://vaelionofocris.com" --outfile sitemap.xml
+
+      - name: Commit sitemap.xml
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add sitemap.xml
+          git commit -m "chore: regenerate sitemap" || echo "No changes"
+          git push
