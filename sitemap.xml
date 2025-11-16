@@ -1,81 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://vaelionofocris.com/</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
     <loc>https://vaelionofocris.com/about.html</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vaelionofocris.com/blog.html</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vaelionofocris.com/book-the-empty-one.html</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://vaelionofocris.com/book-the-hungry-supreme.html</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://vaelionofocris.com/book-the-mindless-cruelty.html</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://vaelionofocris.com/book-the-moderator-bg.html</loc>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://vaelionofocris.com/book-the-moderator-en.html</loc>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://vaelionofocris.com/books-excerpts.html</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vaelionofocris.com/index.html</loc>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://vaelionofocris.com/manifesto.html</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://vaelionofocris.com/mindless_cruelty_web_reader.html</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vaelionofocris.com/posts/a-quiet-introduction-to-the-witness-cycle.html</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://vaelionofocris.com/posts/on-finishing-a-silence.html</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://vaelionofocris.com/posts/on-the-weight-of-remembering.html</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://vaelionofocris.com/posts/on-witnessing-vs-explaining.html</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.6</priority>
   </url>
 </urlset>
