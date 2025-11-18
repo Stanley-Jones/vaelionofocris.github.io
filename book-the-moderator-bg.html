@@ -147,6 +147,19 @@ body.excerpts-page .toc-panel a{text-decoration:underline; text-underline-offset
 body.excerpts-page .book-content :is(h1,h2,h3){margin-top:1.2rem}
 body.excerpts-page .book-content p[class^="calibre"], body.excerpts-page .book-content div[class^="calibre"], body.excerpts-page .book-content span[class^="calibre"]{white-space:inherit !important; line-height:1.75}
 body.excerpts-page .book-content p{margin:0 0 1rem}
+
+/* --- Добави това точно тук --- */
+@media (max-width: 768px) {
+  body.excerpts-page .scroll-box,
+  body.excerpts-page .scroll-box p,
+  body.excerpts-page .book-content,
+  body.excerpts-page .book-content p {
+    text-align: right !important;
+    text-align-last: right;
+  }
+}
+/* --- Край на добавката --- */
+
 </style>
 </head>
 <body class="excerpts-page excerpts-page">
